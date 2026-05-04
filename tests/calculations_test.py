@@ -5,6 +5,10 @@ import os
 # Installed Modules
 import pytest
 
+# @professortocat, I've run my coverage report.
+# Seems there is some opportunity to increase the test coverage. 🧐
+# What should we do next?
+
 # Project Modules
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
 from calculations import area_of_circle, get_nth_fibonacci   # noqa: E402
@@ -56,6 +60,18 @@ def test_get_nth_fibonacci_one():
 
     # Assert
     assert result == 1
+
+
+# def test_get_nth_fibonacci_ten():
+#     """Test with n=10."""
+#     # Arrange
+#     n = 10
+
+#     # Act
+#     result = get_nth_fibonacci(n)
+
+#     # Assert
+#     assert result == 89
 
 
 # def test_get_nth_fibonacci_ten():
